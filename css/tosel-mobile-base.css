@@ -36,7 +36,7 @@ a:hover, a:active, a:visited{
     color: inherit;
 }
 
-body {
+/* body {
 	-webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: 100%; 
 }
@@ -78,10 +78,20 @@ img {
 button {
 	border: 0;
 	background: transparent;
-	cursor: pointer;
+	cursor: pointer; 
+}*/
+
+img {
+	max-width: 100%;
+	height: auto;
+	border: 0;
 }
 
-
+button {
+	border: 0;
+	background: transparent;
+    cursor: pointer; 
+}
 
 .clearfix:after {
     content: '';
@@ -166,7 +176,6 @@ p {
 
 .logo-box {
     width: 8.57rem;
-    height: 2.86rem;
 }
 
 .nav-box {
@@ -197,7 +206,10 @@ section img {
 
 /* intro-wrap */
 
+
+
 .intro-box {
+    display: none;
     width: 20.00rem;
     padding-top: 4.29rem;
     margin: 0 auto;
@@ -220,8 +232,18 @@ section img {
     margin-bottom: 1.43rem;  
 }
 
+.intro-img > img {
+    transform: translateY(20px);
+    transition: transform 400ms ease-in-out 400ms;
+}
 
-.img-whole {
+.intro-img {
+    margin-top: 2rem;
+    width: 100%;
+    height: 15.71rem;
+}
+
+.level-whole {
     display: none;
 }
 
@@ -232,37 +254,58 @@ section img {
 }
 
 .cocoon {
+    display: none;
     top: 0.21rem;
+    transform: translateY(40px);
+    transition: transform 400ms ease-in-out 400ms;
 }
 
 .prestarter {
+    display: none;
     top: 2.64rem;
     left: 3rem;
+    transform: translateY(40px);
+    transition: transform 400ms ease-in-out 400ms;
 }
 
 .starter {
+    display: none;
     top: 1.93rem;
     left: 5.93rem;
+    transform: translateY(40px);
+    transition: transform 400ms ease-in-out 400ms;
 }
 
 .basic {
+    display: none;
     top: 1.21rem;
     left: 8.79rem;
+    transform: translateY(40px);
+    transition: transform 400ms ease-in-out 400ms;
 }
 
 .junior {
+    display: none;
     top: 0.29rem;
     left: 11.79rem;
+    transform: translateY(40px);
+    transition: transform 400ms ease-in-out 400ms;
 }
 
 .highjunior {
+    display: none;
     top: 1.50rem;
     left: 14.64rem;
+    transform: translateY(40px);
+    transition: transform 400ms ease-in-out 400ms;
 }
 
 .advanced {
+    display: none;
     top: 0;
     right: 0;
+    transform: translateY(40px);
+    transition: transform 400ms ease-in-out 400ms;
 }
 
 
@@ -598,7 +641,6 @@ section img {
 
 .color-box {
     background: linear-gradient(93.67deg, rgba(121, 126, 246, 0.6) 7.33%, rgba(74, 222, 222, 0.5) 94.23%);
-    position: relative;
     z-index: 999;
     color: #FFFFFF;
     
@@ -833,3 +875,50 @@ section img {
     }
 }
 
+
+
+
+.sticky-elem {
+	display: none;
+	position: fixed;
+	left: 0;
+	width: 100%;
+}
+
+/* scene  장면 */
+/* 해당되는 섹션에 있는 sticky-elem만 나오도록 하겠다. */
+/* 바디에 붙는 아이디. */
+/* 스크롤 섹션에 있는 아이디. */
+/* 나란히 적는 거는 자손 선택자를 말한다. */
+
+
+
+#show-scene-0 #scroll-section-0 .sticky-elem,
+#show-scene-1 #scroll-section-1 .sticky-elem,
+#show-scene-2 #scroll-section-2 .sticky-elem,
+#show-scene-3 #scroll-section-3 .sticky-elem,
+#show-scene-4 #scroll-section-4 .sticky-elem,
+#show-scene-5 #scroll-section-5 .sticky-elem,
+#show-scene-6 #scroll-section-6 .sticky-elem,
+#show-scene-7 #scroll-section-7 .sticky-elem,
+#show-scene-8 #scroll-section-8 .sticky-elem  {
+	display: block;
+	will-change: transform, opacity;
+}
+.scroll-effect-end .sticky-elem {
+	/* 스크롤 효과가 모두 끝나고, 아래 일반 콘텐츠 영역에서는 sticky-elem들을 모두 안보이도록 */
+	display: none !important;
+}
+
+
+.fade {
+    transition: transform 400ms ease-in-out,opacity 400ms ease-out;
+    opacity: 0;
+    transform: translate(50px);
+}
+
+.pin {
+    opacity: 0;
+    transform: scaleX(0.3);
+    transition: transform 400ms ease-in-out,opacity 400ms ease-out;
+}
