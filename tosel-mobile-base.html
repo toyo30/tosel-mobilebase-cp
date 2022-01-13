@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./css/tosel-mobile-base.css">
     
     
@@ -19,6 +20,7 @@
                 <div class="logo-box">
                     <h1 class="blind">TOSEL LAB</h1>
                     <img class="m-tosel-logo" src="./images/m-tosel-lab.png" alt="토셀로고">
+                    <img class="pc-tosel-logo" src="./images/pc-tosel-lab.png" alt="토셀로고">
                 </div>
 
                 <nav class="nav-box">
@@ -32,7 +34,7 @@
                         <li class="nav-item"><a href="http://www.tosel.org/indexn2" target='_blank' class="nav-link">TOSEL 홈으로</a></li>
                     </ul>
 
-                    <button class="btn-login">로그인</button>
+                    <button class="btn-login" onclick="location.href='http://www.tosel.org/indexn2'" target='_blank' >TOSEL 홈으로</button>
                 </nav>
             </header>
         </div>
@@ -40,12 +42,14 @@
         <div id="container">
 
             <section id="scroll-section-0" class="scroll-section intro-wrap">
-                <div class="intro-box">
-                    <div class="intro-title">
+                <div class="deco-left"></div> 
+                <div class="deco-right"></div>
+                <div class="intro-box clearfix">
+                    <div class="intro-title float">
                         <p class="int-st">12년 영어학습 3년 프로젝트</p>
                         <h2 class="int-title">스파이럴 영어 클리닉</h2>
                     </div>
-                    <div class="intro-img">
+                    <div class="intro-img float">
                         <img class="level-whole" src="./images/img_level.png" alt="시험레벨">
                         <img class="level cocoon" src="./images/level-cocoon.png"alt="코쿤레벨">
                         <img class="level prestarter" src="./images/level-prestarter.png"alt="프리스타터레벨">
@@ -56,7 +60,7 @@
                         <img class="level advanced" src="./images/level-advanced.png"alt="어드벤스드레벨">
                     </div>
 
-                    <div class="intro-text">
+                    <div class="intro-text float">
                         <p class="int-top">TOSEL Lab는,</p>
                         <p class="int-middle">
                             200만명 응시자 성적데이터를 기반으로 한 AI 분석진단을
@@ -75,16 +79,19 @@
                         <span class="scroll-item">Scroll Down</span>
                     </div>
                 </div>
+                
             </section>
 
 
             <section id="scroll-section-1" class="scroll-section prob-wrap">
+                <div class="deco-prob-left"></div> 
+                <div class="deco-prob-right"></div>
                 <div class="prob-box">
-                    <div class="prob-item">
+                    <div class="prob-item clearfix">
                         <h3 class="prob-title fade bottom">왜 아이들이 영어를 포기할까?</h3>
                         <div class="prob-img fade bottom">
                             <img class="m-img" src="./images/m-problem-img.png" alt="문제이미지">
-                            <img class="pc-img" src="./images/problem-img.png" alt="문제이미지">
+                            <img class="pc-img" src="./images/pc-problem-img.png" alt="문제이미지">
                         </div>
                         <div class="prob-text fade middle">
                             <p class="prob-des">
@@ -96,13 +103,13 @@
                         </div>
                     </div>
 
-                    <div class="solu-item">
+                    <div class="solu-item clearfix">
                         <h3 class="solu-title fade bottom"><strong>S</strong>olution?</h3>
                         <div class="solu-img fade bottom">
                             <img class="m-img" src="./images/m-solution-img.png" alt="문제이미지">
-                            <img class="pc-img" src="./images/problem-img.png" alt="문제이미지">
+                            <img class="pc-img" src="./images/pc-solution-img.png" alt="문제이미지">
                         </div>
-                        <div class="prob-text fade middle">
+                        <div class="solu-text fade middle">
                             <p class="solu-des">전국적인 데이터를 토대로, 아이 성적의 위치와 공부 방향을 개별적으로 제시받고, 이를 토대로 공부할 수 있는 플랫폼이 제공된다면,</p>
                             <p class="solu-sum">학생 본인의 결점을 보완할 수 있는
 길라잡이가 될 것입니다.</p>
@@ -113,6 +120,8 @@
             </section>
 
             <section id="scroll-section-2" class="scroll-section about-wrap">
+                <div class="deco-about-left"></div> 
+                <div class="deco-about-right"></div>
                 <div class="about-box">
                     <h3 class="about-title fade bottom">About TOSEL Lab</h3>
 
@@ -129,45 +138,51 @@
                         보완할 수 있는 플랫폼을 선보입니다.</strong></p>
                         
                     
-                    <div class="about-img fade bottom">
-                        <img class="m-img" src="./images/m-spiral-img.png" alt="스파이럴 이미지">
-                        <img class="pc-img" src="./images/pc-spiral-img.png" alt="스파이럴 이미지">
-                    </div>
+                    
 
-                    <div class="about-text fade bottom">
-                        <h4 class="text-title">1. TOSEL 평가</h4>
-                        <p class="text-des">학생의 영어 능력을 평가 테스트를 통해 정확하게 평가하여,
+                    <div class="about-text-box">
+
+                        <div class="about-img fade top">
+                            <img class="m-img" src="./images/m-spiral-img.png" alt="스파이럴 이미지">
+                            <img class="pc-img" src="./images/pc-spiral-img.png" alt="스파이럴 이미지">
+                        </div>
+                        <div class="about-text fir-arrange fade bottom">
+                            <h4 class="text-title">1. TOSEL 평가</h4>
+                            <p class="text-des">학생의 영어 능력을 평가 테스트를 통해 정확하게 평가하여,
 결과 도출</p>
-                    </div>
+                        </div>
 
-                    <div class="about-text fade bottom">
-                        <h4 class="text-title">2. 결과 분석 및 진단</h4>
-                        <p class="text-des">시험 점수와 결과를 분석하여 학생의 강점, 취약점, 학습자 특성 등을
+                        <div class="about-text sec-arrange fade bottom">
+                            <h4 class="text-title">2. 결과 분석 및 진단</h4>
+                            <p class="text-des">시험 점수와 결과를 분석하여 학생의 강점, 취약점, 학습자 특성 등을
 객관적으로 진단</p>
-                    </div>
+                        </div>
 
-                    <div class="about-text fade bottom">
-                        <h4 class="text-title">3. 학습 방향 제시</h4>
-                        <p class="text-des">객관적 진단 데이터를 기반으로 학습자 특성에 맞는 학습 방향
+                        <div class="about-text thr-arrange fade bottom">
+                            <h4 class="text-title">3. 학습 방향 제시</h4>
+                            <p class="text-des">객관적 진단 데이터를 기반으로 학습자 특성에 맞는 학습 방향
 제시 및 목표 설정</p>
-                    </div>
+                        </div>
 
-                    <div class="about-text fade bottom">
-                        <h4 class="text-title">4. 학습</h4>
-                        <p class="text-des">제시된 방향과 목표에 따라 학생에게 적합한 콘텐츠/학습법으로 학습</p>
-                    </div>
+                        <div class="about-text fou-arrange fade bottom">
+                            <h4 class="text-title">4. 학습</h4>
+                            <p class="text-des">제시된 방향과 목표에 따라 학생에게 적합한 콘텐츠/학습법으로 학습</p>
+                        </div>
 
-                    <div class="about-text fade bottom">
-                        <h4 class="text-title">5. 학습 목표 달성</h4>
-                        <p class="text-des">학습 후 다시 평가를 통해 목표 달성 여부 확인 및 성장을 위한
+                        <div class="about-text fiv-arrange fade bottom">
+                            <h4 class="text-title fade top">5. 학습 목표 달성</h4>
+                            <p class="text-des">학습 후 다시 평가를 통해 목표 달성 여부 확인 및 성장을 위한
 다음 학습목표 설정</p>
-                    </div>
+                        </div>
+                    </div> 
 
                 </div>
             </section>
 
 
             <section id="scroll-section-3" class="scroll-section contents-wrap">
+                <div class="deco-contents-left"></div> 
+                <div class="deco-contents-right"></div>
                 <div class="contents-box">
                     <h3 class="contents-title fade bottom">Contents</h3>
                     <div class="contents-pin">
@@ -177,7 +192,7 @@
                     <p class="contents-date fade bottom">구체적인 컨텐츠 소개는 3월에 출시 예정입니다.</p>
 
                     <div class="contents-list">
-                        <div class="contents-item fade bottom">
+                        <div class="contents-item fade top" data-target="con-test">
                             
                             <div class="cimg-box">
                                 <img class="m-cimg" src="./images/m-ctest.png" alt="시험">
@@ -188,12 +203,12 @@
                                 <strong>Test</strong> Contents
                             </h4>
                             <p class="citem-text">신규원생 상담과 반배치를 위한 Placement Test, 기존원생 상담과 반배치를 위해서는 TOSEL Test 제공</p>
-
+                            <button class="btn-more">더 알아보기</button>
                         </div>
                     
 
                     
-                        <div class="contents-item fade bottom">
+                        <div class="contents-item fade top" data-target="con-book">
                             <div class="cimg-box">
                                 <img class="m-cimg" src="./images/m-cbook.png" alt="책">
                                 <img class="pc-cimg" src="./images/pc-cbook.png" alt="책">
@@ -203,12 +218,12 @@
                                 <strong>Book</strong> Contents
                             </h4>
                             <p class="citem-text">TOSEL의 세분화된 레벨을 토대로, 각 연령에 맞는 어휘와 교과 과정과의 연계가 가능하도록 설계된 교재</p>
-
+                            <button class="btn-more">더 알아보기</button>
                         </div>
                     
 
                     
-                        <div class="contents-item fade bottom">
+                        <div class="contents-item fade top" data-target="con-digital">
                             
                             <div class="cimg-box">
                                 <img class="m-cimg" src="./images/m-cdigital.png" alt="모니터">
@@ -219,12 +234,12 @@
                                 <strong>Digital</strong> Contents
                             </h4>
                             <p class="citem-text">영어성적을 분석한 빅데이터에 AI(인공지능)를 활용하여 세분화된 레벨로 설계한 디지털학습과정</p>
-
+                            <button class="btn-more">더 알아보기</button>
                         </div>
                     
 
                  
-                        <div class="contents-item fade bottom">
+                        <div class="contents-item fade top" data-target="con-lms">
                             
                             <div class="cimg-box">
                                 <img class="m-cimg" src="./images/m-clms.png" alt="분석">
@@ -235,7 +250,7 @@
                                 <strong>LMS</strong> Contents
                             </h4>
                             <p class="citem-text">디지털학습을 통해 쌓은 데이터를 기반으로 학생의 학습 방향성을 제시할 수 있는 학습관리시스템 제공</p>
-
+                            <button class="btn-more">더 알아보기</button>
                         </div>
                     </div> 
 
@@ -244,18 +259,25 @@
                     <p class="contents-des fade bottom"><strong>TOSEL Lab</strong> 은 토셀의 솔루션을 
 제공받을 수 있는 하나의
 새로운 플랫폼입니다. </p>
-
+                        
                     <div class="scroll-box">
                         <span class="scroll-item">Scroll Down</span>
                     </div>
+                    
                 </div>
+
+               
             </section>
+
+
+           
 
 
 
 
 
             <section id="scroll-section-4" class="scroll-section good-wrap">
+                <div class="deco-good-left"></div>
                 <div class="good-box">
                     <h3 class="good-title fade bottom">What’s Good for You?</h3>
                    
@@ -263,7 +285,7 @@
                     <p class="good-date fade bottom">구체적인 혜택 정보를 알고 싶으시다면, 더 알아보기를 눌러보세요.</p>
 
                     <div class="good-list">
-                        <div class="good-item fade bottom">
+                        <div class="good-item fade middle" data-target="good-hyunpan">
                             
                             <div class="gimg-box">
                                 <img class="m-gimg" src="./images/m-good-hyunpan.png" alt="시험">
@@ -271,7 +293,7 @@
                             </div>
 
                             <h4 class="gitem-title">
-                                <strong>현판 제공</strong>
+                                <strong>토셀 지정학원 공식 인증</strong>
                             </h4>
                             <p class="gitem-text">TOSEL Lab 국제토셀위원회 지정학원 현판과 배너를 제공하여 학원의 홍보효과와 공신력을 높일 수 있습니다.</p>
 
@@ -282,7 +304,7 @@
                    
 
                    
-                        <div class="good-item fade bottom">
+                        <div class="good-item fade middle" data-target="good-ai">
                             
                             <div class="gimg-box">
                                 <img class="m-gimg" src="./images/m-good-ai.png" alt="책">
@@ -303,7 +325,7 @@
                
 
                    
-                        <div class="good-item fade bottom">
+                        <div class="good-item fade middle" data-target="good-test">
                             
                             <div class="gimg-box">
                                 <img class="m-gimg" src="./images/m-good-leveltest.png" alt="모니터">
@@ -324,7 +346,7 @@
                   
 
                 
-                        <div class="good-item fade bottom">
+                        <div class="good-item fade middle" data-target="good-lms">
                             
                             <div class="gimg-box">
                                 <img class="m-gimg" src="./images/m-good-lms.png" alt="분석">
@@ -358,8 +380,9 @@
                         <div class="pin-item pin"></div>
                     </div>
 
-                    <div class="diff-video">
-                        <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/BSihY5nc1x8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  -->
+                    <div class="diff-video fade middle">
+                        <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/BSihY5nc1x8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                        <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/BSihY5nc1x8" title="YouTube video player" frameborder="0" allowfullscreen></iframe>   -->
                     </div>
 
                     <div class="diff-pin">
@@ -387,16 +410,20 @@
                     <h3 class="global-title fade bottom">대한민국 인재들의 글로벌 경쟁력을
                         높이는 사회적 가치 실현.</h3>
                     
-                    <div class="global-img fade bottom">
-                        <img class="m-global" src="./images/m-global.png" alt="토셀진단학습순서">
+                    <div class="diff-pin">
+                        <div class="pin-item pin"></div>
+                    </div>
+
+                    <div class="global-img">
+                        <img class="m-global fade top" src="./images/m-global.png" alt="토셀진단학습순서">
                         
                         <div class="pc-imgbox">
                             <!-- 하나는 fade bottom, 하나는 미드, 하나는 미드 over 등으로 주면 스르르 나올 듯 -->
-                            <img class="pc-global" src="./images/pc-global-test.png" alt="토셀진단학습순서">
+                            <img class="pc-global fade top" src="./images/pc-global-test.png" alt="토셀진단학습순서">
                             <img class="pc-global-arrow" src="./images/pc-global-test-arrow.png" alt="토셀진단학습순서">
-                            <img class="pc-global" src="./images/pc-global-acade.png" alt="토셀진단학습순서">
+                            <img class="pc-global fade middle" src="./images/pc-global-acade.png" alt="토셀진단학습순서">
                             <img class="pc-global-arrow" src="./images/pc-global-acade-arrow.png" alt="토셀진단학습순서">
-                            <img class="pc-global" src="./images/pc-global-contents.png" alt="토셀진단학습순서">
+                            <img class="pc-global fade bottom" src="./images/pc-global-contents.png" alt="토셀진단학습순서">
                         </div>
                     </div>
 
@@ -434,23 +461,35 @@
             </section>
             </div> 
         </div>
+
+
+
+        
         
         <div id="scroll-section-8" class="scroll-section foot-wrap">
             <div id="footer">
                 <div class="foot-box">
-                    <button class="pre-reserve fade bottom"><p>사전 예약 하러가기</p></button>
+                    <button class="pre-reserve fade bottom">
+                        <a href="https://forms.gle/yvSYeHoDQMZNHx6n8">
+                            <p>사전 예약 하러가기</p>
+                        </a>
+                    </button>
 
 
-                    <div class="logo-item fade bottom">
-                        <a href="" class="logo-link"><img src="./images/페이스북로고.png" alt="페이스북로고"></a>
-                        <a href="" class="logo-link"><img src="./images/인스타그램로고.png" alt="인스타그램로고"></a>
-                        <a href="" class="logo-link"><img src="./images/유튜브로고.png" alt="인스타그램로고"></a>
-                        <a href="" class="logo-link"><img src="./images/네이버블로그로고.png" alt="네이버블로그로고"></a>
-                    </div>
+                
 
 
-                    <div class="foot-item fade bottom">
+                    <div class="foot-item">
                         <p class="copy">Copyright © TOSEL Corp. 2002-2021 All Rights Reserved.</p>
+
+
+                        <div class="logo-item fade bottom">
+                            <a href="https://www.facebook.com/TOSELFRIEND" class="logo-link"><img src="./images/페이스북로고.png" alt="페이스북로고"></a>
+                            <a href="https://www.instagram.com/tosel_official" class="logo-link"><img src="./images/인스타그램로고.png" alt="인스타그램로고"></a>
+                            <a href="https://www.youtube.com/channel/UCY-PvrJPkwc_VBlIpP0O43g" class="logo-link"><img src="./images/유튜브로고.png" alt="유튜브로고"></a>
+                            <a href="https://blog.naver.com/PostList.naver?blogId=ebs1503" class="logo-link"><img src="./images/네이버블로그로고.png" alt="네이버블로그로고"></a>
+                        </div>
+
                         <ul class="login-link">
                             <ul class="foot-list">
                                 <li class="flink-item"><a href="#" class="foot-link block">Eng</a></li>
@@ -463,9 +502,7 @@
 
                                 <button class="foot-login">로그인</button>
                             </ul>
-                            
-
-                        
+   
                         </ul>
                         
                     </div>
@@ -473,19 +510,86 @@
             </div>
         </div>
 
+        <div class="popup">
+            <div class="popup-layer">
+                <div class="text-area">
+                
+                    <div class="m-contents-img-box swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <img src="./images/m-contents-pop-lms1.png" class="swiper-slide" alt="컨텐츠엘엠에스이미지">
+                            <img src="./images/m-contents-pop-lms2.png" class="swiper-slide" alt="컨텐츠엘엠에스이미지">
+                            <img src="./images/m-contents-pop-lms3.png" class="swiper-slide" alt="컨텐츠엘엠에스이미지">
+                            <img src="./images/m-contents-pop-lms3.png" class="swiper-slide" alt="컨텐츠엘엠에스이미지">
+                            <!-- <div class="m-contents-img swiper-slide"></div>
+                            <div class="m-contents-img swiper-slide"></div>
+                            <div class="m-contents-img swiper-slide"></div> -->
+                        </div>
+                        <div class="popup-next swiper-button-next"></div>
+                        <div class="popup-prev swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                    <div class="text-box">
+                        <p class="sub-text">한 눈에 볼 수 있는 학습 현황</p>
+                        <strong class="title">LMS</strong>
+                        <p class="text">
+                            <strong>학생의 학습현황을 쉽고 빠르게 파악.</strong>
+                            학생이 얼마나 열심히 했으며, 어떤
+                            학습 상황에 있는지 바로바로 체크할
+                            수 있고, 학생관리를 더 효율적으로
+                            진행할 수 있습니다.</p>
 
 
+                        <div class="btn-area">
+                            <button type="button" name="button" class="btn">가입 상담 예약하기</button>
+                        </div>
+                    </div>
+                </div>
+                
 
-
+                <button class="close-btn"></button>
+            </div>
+            <div class="popup-dimmed"></div>
+        </div>
 
 
     </div>
+
+
 <!-- <script src="./js/tosel-mobile-base copy.js"></script> -->
+
+<script src="js/popup-img-change.js"></script> 
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/fade.js"></script> 
+
 <script>
 
 
 
-//----------------------- int-level 등장
+// ----------준비 중인 서비스입니다.
+// function openBtn() {
+//     alert('준비중인 서비스입니다.');
+// }
+
+
+
+//------------상단스크롤 바--------------------------
+
+var progressIndicator = '<div id="i-am-progress-indicator"></div>';
+        $('body').append(progressIndicator);
+
+        $(window).on('scroll', function(){
+            var currentPercentage = ($(window).scrollTop() / ($(document).outerHeight() - $(window).height())) * 100;
+            $('#i-am-progress-indicator').width(currentPercentage+'%');
+        });
+
+// $('.nav-box').on('click', openBtn);
+// $('.foot-login').on('click', openBtn);
+
+
+
+
+//----------------------- int-level 등장 -------------------------
 setTimeout(function() {
             $('.cocoon').fadeIn(500);
             $('.cocoon').css({'transform':'translateY(0px)'})
@@ -523,79 +627,10 @@ setTimeout(function() {
 
 
 $('.intro-box').fadeIn(1500);
-
-
-
-
-
-
-//----------------------- fade-in-out 
-
-function fadeBottom() {
-					let windowBottom = $(window).scrollTop() + $(window).height();
-					
-					$('.fade.bottom').each(function () {
-					  let playHeight = $(this).position().top + $(this).outerHeight();
-					  
-					  if(windowBottom > playHeight) {
-						
-						$(this).css({'transform':'translateY(0px)'});
-                        $(this).animate({'opacity': '1'}, 10);
-					  } else if(windowBottom < playHeight) {
-						
-						$(this).css({'transform':'translateY(20px)'});
-                        $(this).animate({'opacity': '0'}, 10);
-					  }
-					})
-					
-                    }
-				  
-				  
-$(window).on('scroll', fadeBottom);
-
-function fadeMiddle() {
-					let windowBottom = $(window).scrollTop() + $(window).height();
-					
-					$('.fade.middle').each(function () {
-					  let playHeight = $(this).position().top + $(this).outerHeight() * 2 /3;
-					  
-					  if(windowBottom > playHeight) {
-						
-						$(this).css({'transform':'translateY(0px)'});
-                        $(this).animate({'opacity': '1'}, 10);
-					  } else if(windowBottom < playHeight) {
-						
-						$(this).css({'transform':'translateY(50px)'});
-                        $(this).animate({'opacity': '0'}, 10);
-					  }
-					})
-					
-                    }
-				  
-$(window).on('scroll', fadeMiddle);
-
-
-function scalePin() {
-					let windowBottom = $(window).scrollTop() + $(window).height();
-					
-					$('.pin').each(function () {
-					  let playHeight = $(this).position().top + $(this).parent().outerHeight();
-					  
-					  if(windowBottom > playHeight) {
-						
-						$(this).css({'transform':'scaleX(1)'});
-                        $(this).animate({'opacity': '1'}, 10);
-					  } else if(windowBottom < playHeight) {
-						
-						$(this).css({'transform':'scaleX(0)'});
-                        $(this).animate({'opacity': '0'}, 10);
-					  }
-					})
-					
-                    }
-				  
-$(window).on('scroll', scalePin);
 </script>
+
+
+
 
 </body>
 </html>
