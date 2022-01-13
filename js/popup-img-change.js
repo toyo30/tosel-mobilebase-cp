@@ -8,6 +8,7 @@
 	let currentClick = 0;
 	let currentBtns = document.querySelectorAll('.btn-more');
 	let breakPoint = $(window).width();
+	window.swiper = null;
 	
 	const popInfo = [
 
@@ -485,7 +486,7 @@
 
 
 	
-	
+
 	$(window).resize(function() {
 		breakPoint = $(window).width();
 		changeValue();
